@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.slim.js"></script>
+    <title>Jquery and event</title>
+    <script>
+        //<!-- $(function(){
+       //$("p").dblclick(function(){
+          //  $(this).hide();
+            //double click hide
+        //  })
+        //}) -->
+        $(function(){
+            $("p").on({
+                mouseenter:function(){
+                 $(this).css("background-color","red");
+                },
+                mouseleave:function(){
+                    $(this).css("background-color","pink");
+                },
+                click:function(){
+                    $(this).css("background-color","green");
+                }
+            })
+            //$("input").focus(function(){
+            //    $(this).css("background-color","red");
+           // })
+           // $("input").blur(function(){
+            //    $(this).css("background-color","pink");
+           // })
+        })
+          //  <!-- $(function(){
+          //      $("p").mouseleave(function(){
+//             alert("are you on heading")
+           //     })
+           // })
+          //  $(function(){
+           //     $("#demo").mousedown(function(){
+           //         alert("are you on heading")
+             //   })
+            //}) -->
+      //  <!-- $(document).ready(function(){
+          //  $("button").click(function(){
+           //     $("p:odd").hide();
+                // id for #
+                // class for .
+                //simple p 
+               // * for all hide
+               //p: even 
+               //p:odd
+          //  })
+       // }) -->
+        
+    </script>
+</head>
+<body>
+    <p>this is jquery</p>
+    <!-- NAME :<input type="text" name="name"><br>
+    EMAIL:<input type="email" name="email"><br> -->
+    <!-- <h2>JQUERY EVENT</h2>
+    <p id="demo">this is paragraph1</p>
+    <p>this is paragraph2</p>
+    <p>this is paragraph3</p>
+    <p>this is paragraph4</p>
+    <p>this is another paragraph</p> -->
+    <!-- <button type="button">click me to hide</button> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></scrip> -->
+</body>
+</html>
