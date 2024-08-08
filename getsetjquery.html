@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.js"></script>
+    <title>get and set</title>
+</head>
+<script>
+    $(function(){
+        $("#text").click(function(){
+         // alert("#tex:" + $("tex").text());
+         // alert("#tex:" + $("tex").html());
+          //alert("#value:" + $("#inp").val());
+          alert("Atrribute" + $("#ab").attr("href"));
+        })
+        $("#set").click(function(){
+            $("#tex").text("how are you");
+            $("#tex").html("<b>hello</b> how are you");
+            $("#inp").val("arpana kumari");
+        })
+    });
+</script>
+<body>
+    <p id="tex"> this is <strong><em> paragrapgh</em></strong></p>
+    Name: <input type="tex" name="text" id="inp" value="hello">
+    <a href="https://www.wikipedia.com" id="ab">wikipedia</a>
+    <button id="text" type="button">text</button>
+    <button id="set" type="button">set</button>
+    
+</body>
+</html>
