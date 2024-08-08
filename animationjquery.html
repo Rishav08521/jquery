@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <title>animation and slide</title>
+</head>
+<style>
+    #panel,#flip{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: 1px solid #c3c3c3;
+
+    }
+    #panel{
+        padding: 50px;
+        display: none;
+    }
+    #pani{
+        background-color: greenyellow;
+        margin-top: 20px;
+        padding: 5px;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        
+        
+    }
+</style>
+<script>
+    $(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        })
+        $("button").click(function(){
+            $("pani").animate({left:"250px"});
+        })
+    });
+</script>
+<body>
+    <div id="flip">CLICK TO THIS PANEL</div>
+    <div id="panel">HEllo ! click there to see</div>
+    <button type="button">start me</button>
+    <div id="pani">Anime me</div>
+    
+</body>
+</html>
