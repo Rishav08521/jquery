@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.slim.js"></script>
+    <title>jquery hide and shoe and toggle</title>
+    <style>
+        p{
+            height: 100px;
+            width: 300px;
+            background-color: red;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+  
+    <script>
+        $(function(){
+           // <!-- $("#hide").click(function(){
+            //    $("p").hide(10000);
+           // });
+           // $("#show").click(function(){
+           //     $("p").show(20000);
+           // }); -->
+           $("button").click(function(){
+            $("p").toggle();
+           })
+        
+        });
+       
+    </script>
+</head>
+<body>
+    <button type="button">click me to toggle</button>
+    <p>if click on hide button i will show disappear</p>
+    <p>this is my project</p>
+    <p>this is my second project</p>
+   <!--  <button id="hide" type="button">hide</button>
+    <button id="show" type="button">show</button> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></scrip> -->
+</body>
+</html>
