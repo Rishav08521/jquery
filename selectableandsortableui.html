@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    #sort{
+        list-style-type:none ;
+        margin: 0px;
+        padding: 0;
+        width: 60%;
+    }
+    #select li{
+        margin: 3px;
+        padding: 8px;
+        font-size: 20px;
+        height: 22px;
+    }
+    #sort li{
+        margin: 3px;
+        padding: 8px;
+        font-size: 20px;
+        height: 22px;
+    }
+    #select .ui-selecting{
+        background: #feca40;
+      
+    }
+    #select .ui-selected{
+        background: #f39814;
+        color: #fff;
+        
+    }
+</style>
+<script>
+    $(function(){
+        $("#sort,#sort1").sortable({
+            connectWith:".ris"
+        });
+    });
+</script>
+<body>
+    <!-- <ol id="select">
+        <li class="ui-widget-content">item 1</li>
+        <li class="ui-widget-content">item 2</li>
+        <li class="ui-widget-content">item 3</li>
+        <li class="ui-widget-content">item 4</li>
+        <li class="ui-widget-content">item 5</li>
+        <li class="ui-widget-content">item 6</li>
+    </ol> -->
+    <ol id="sort" class="ris">
+        <li class="ui-widget-content">item 1</li>
+        <li class="ui-widget-content">item 2</li>
+        <li class="ui-widget-content">item 3</li>
+        <li class="ui-widget-content">item 4</li>
+        <li class="ui-widget-content">item 5</li>
+        <li class="ui-widget-content">item 6</li>
+    </ol>
+    <ol id="sort1" class="ris">
+        <li class="ui-widget-content">item 1</li>
+        <li class="ui-widget-content">item 2</li>
+        <li class="ui-widget-content">item 3</li>
+        <li class="ui-widget-content">item 4</li>
+        <li class="ui-widget-content">item 5</li>
+        <li class="ui-widget-content">item 6</li>
+    </ol>
+
+
+    
+</body>
+</html>
