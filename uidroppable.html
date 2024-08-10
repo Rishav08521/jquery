@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    
+   
+    <title>Document</title>
+</head>
+<style> 
+    #drag{
+           width: 150px;
+           height: 150px;
+           background-color: aqua;
+           padding: 20px;
+           color: white;
+    }
+    #drop{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(255, 72, 0);
+        padding: 20px;
+        color: white;
+    }
+</style>
+<script>
+    $(function(){
+        $("#drag").draggable();
+        $("#drop").dropable();
+    
+    })
+</script>
+
+<body>
+    <div id="drag">
+     <p>this is drag me!</p>
+    </div>
+    <div id="drop">
+        <p>this is drag me!</p>
+       </div>
+    
+</body>
+</html>
