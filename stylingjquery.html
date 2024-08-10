@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.js"></script>
+    <title>Styling</title>
+</head>
+<style>
+    .fontset{
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .colorset{
+        color: aqua;
+
+    }
+</style>
+<script>
+    $(function(){
+        $("#add").click(function(){
+            $("h1 , h3, p").addClass("colorset");
+            $("div").addClass("fontset");
+        })
+    })
+</script>
+<body>
+    <h1>heading text</h1>
+    <h3> small heading</h3>
+    <p>this is a paragraph</p>
+    <div>
+        this text is in div
+    </div>
+    <button type="button" id="add"> add class</button>
+    
+</body>
+</html>
